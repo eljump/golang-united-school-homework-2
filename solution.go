@@ -23,8 +23,7 @@ func CalcSquare(sideLen float64, sidesCount intSidesNumType) float64 {
 }
 
 func triangleSquare(sideLen float64) float64 {
-	p := (sideLen * float64(SidesTriangle)) / 2
-	return math.Sqrt(p * math.Pow(p-sideLen, 3))
+	return sideLen * math.Sqrt(3) / 4
 }
 
 func squareSquare(sideLen float64) float64 {
@@ -32,5 +31,5 @@ func squareSquare(sideLen float64) float64 {
 }
 
 func circleSquare(sideLen float64) float64 {
-	return math.Pi * math.Pow(sideLen, 2)
+	return math.Pi * math.Pow(sideLen, 2) / 2
 }
