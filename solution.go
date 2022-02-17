@@ -1,4 +1,4 @@
-package square
+package soluton
 
 import "math"
 
